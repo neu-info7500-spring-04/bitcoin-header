@@ -2,6 +2,7 @@
     "name": "bitcoin-header",
     "version": "1.0.0",
     "main": "server.js",
+    "type": "commonjs",
     "scripts": {
         "start": "node src/server.js",
         "dev": "nodemon --watch src src/server.ts",
@@ -11,7 +12,8 @@
         "apollo-server": "^3.0.0",
         "axios": "^1.6.7",
         "graphql": "^16.0.0",
-        "react": "^18.2.0"
+        "react": "^18.2.0",
+        "express": "^4.17.1"
     },
     "devDependencies": {
         "@graphql-codegen/cli": "^5.0.2",
@@ -20,6 +22,8 @@
         "@graphql-codegen/typescript-react-apollo": "^4.3.0",
         "@types/react": "^18.2.57",
         "nodemon": "^2.0.15",
-        "typescript": "^4.6.4"
+        "typescript": "^4.6.4",
+        "webpack": "^5.90.3",
+        "webpack-cli": "^5.1.4"
     }
 }

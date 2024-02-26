@@ -11,12 +11,7 @@ async function fetchBitcoinPrice(apiKey) {
     const twentyFourHoursAgo = new Date(Date.now() - 2 * 24 * 60 * 60 * 1000);
     // Format the date and time as an ISO 8601 string
     const isoString = twentyFourHoursAgo.toISOString();
-    console.log("isos::", isoString);
-    //const twentyFourHoursAgo = new Date(Date.now() - 2* 24 * 60 * 60 * 1000);
-    //const torontoTimeString = twentyFourHoursAgo.toLocaleString('en-US', { timeZone: 'America/Toronto' });
-    //const twentyFourHoursAgoToronto = new Date(torontoTimeString);
-    //const isoString = twentyFourHoursAgoToronto.toISOString();
-    console.log("time:", isoString);
+    console.log("isotime::", isoString);
     try {
         const graphqlResponse = await axios_1.default.post(url, {
             query: `

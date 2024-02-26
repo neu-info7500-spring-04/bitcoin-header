@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="headerItem">
+        <div class="headerLabel">Bitcoin Price</div>
+        <div class="headerData" id="bitcoinPrice"></div>
+      </div>
+      <div class="headerItem">
+        <div class="headerLabel">Current Difficulty</div>
+        <div class="headerData" id="bitcoinDifficulty"></div>
+      </div>
+      <div class="headerItem">
+        <div class="headerLabel">Total Transactions</div>
+        <div class="headerData" id="totalTransactions"></div>
+      </div>
+      <div class="headerItem">
+        <div class="headerLabel">Latest Blocks</div>
+        <div class="headerData" id="latestBlocks"></div>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="bitcoinChart" width="200" height="50"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
